@@ -1,6 +1,6 @@
 # mathscapes
 
-[![Node.js Package](https://github.com/gv-sh/mathscapes/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/gv-sh/mathscapes/actions/workflows/npm-publish.yml)
+[![Node.js Package](https://github.com/gv-sh/mathscapes/actions/workflows/.npm-publish.yml/badge.svg)](https://github.com/gv-sh/mathscapes/actions/workflows/.npm-publish.yml)
 
 One line description of the package.
 
