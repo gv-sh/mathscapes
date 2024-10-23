@@ -1,5 +1,5 @@
 {
-    "name": "@org/package-name",
+    "name": "mathscapes",
     "version": "0.1.0",
     "description": "One line description of the package.",
     "main": "index.js",

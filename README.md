@@ -1,6 +1,6 @@
-# @org/package-name
+# mathscapes
 
-[![Node.js Package](https://github.com/gv-sh/package-name/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/gv-sh/package-name/actions/workflows/npm-publish.yml)
+[![Node.js Package](https://github.com/gv-sh/mathscapes/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/gv-sh/mathscapes/actions/workflows/npm-publish.yml)
 
 One line description of the package.
 
@@ -8,10 +8,10 @@ One line description of the package.
 
 ## Installation 
 
-To install @org/package-name, use npm:
+To install mathscapes, use npm:
 
 ```bash
-npm install @org/package-name
+npm install mathscapes
 ```
 
 ## Usage
