@@ -2,9 +2,10 @@
 
 [![Node.js Package](https://github.com/gv-sh/mathscapes/actions/workflows/.npm-publish.yml/badge.svg)](https://github.com/gv-sh/mathscapes/actions/workflows/.npm-publish.yml)
 
-One line description of the package.
+Basic linear algebra operations for JavaScript.
 
 ## Features
+- Matrix operations
 
 ## Installation 
 
@@ -13,8 +14,6 @@ To install mathscapes, use npm:
 ```bash
 npm install mathscapes
 ```
-
-## Usage
 
 ## Development
 
