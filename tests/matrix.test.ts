@@ -1,8 +1,12 @@
-import { add, multiply, identity, inverse, transpose, scale, createRowMatrix, createColumnMatrix, cloneMatrix, fillMatrix, getDimensions, flattenMatrix, reshapeToMatrix } from '../src/matrix';
+import { add, subtract, multiply, identity, inverse, transpose, scale, createRowMatrix, createColumnMatrix, cloneMatrix, fillMatrix, getDimensions, flattenMatrix, reshapeToMatrix } from '../src/matrix';
 
 describe('Matrix Functions', () => {
     test('add', () => {
         expect(add([[1, 2], [3, 4]], [[5, 6], [7, 8]])).toEqual([[6, 8], [10, 12]]);
+    });
+
+    test('subtract', () => {
+        expect(subtract([[1, 2], [3, 4]], [[5, 6], [7, 8]])).toEqual([[-4, -4], [-4, -4]]);
     });
 
     test('multiply', () => {

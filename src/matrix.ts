@@ -16,6 +16,17 @@ export const add = (matrixA: number[][], matrixB: number[][]): number[][] => {
 }
 
 /**
+ * Subtracts two matrices and returns the result.
+ * 
+ * @param {number[][]} matrixA - The first matrix to subtract.
+ * @param {number[][]} matrixB - The second matrix to subtract.
+ * @returns {number[][]} The resulting matrix after subtraction.
+ */
+export const subtract = (matrixA: number[][], matrixB: number[][]): number[][] => {
+    return add(matrixA, scale(matrixB, -1));
+}
+
+/**
  * Multiplies two matrices and returns the result.
  * 
  * @param {number[][]} matrixA - The first matrix to multiply.
