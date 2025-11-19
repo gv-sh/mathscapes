@@ -128,16 +128,16 @@
   - Solve for variable (linear, quadratic, simple cases)
   - Partial fraction decomposition
 
-### Week 4: Equation Solving
-- [ ] **Algebraic equations:**
+### Week 4: Equation Solving ✅
+- [x] **Algebraic equations:**
   - Linear equations (ax + b = 0)
   - Quadratic equations (exact symbolic solutions)
   - Systems of linear equations (symbolic)
   - Polynomial equations (numeric roots + symbolic for low degree)
-- [ ] **Symbolic limits:**
+- [x] **Symbolic limits:**
   - Limit computation
   - L'Hôpital's rule application
-- [ ] **Series expansion:**
+- [x] **Series expansion:**
   - Taylor/Maclaurin series
   - Power series operations
 
