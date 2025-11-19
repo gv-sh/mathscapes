@@ -96,3 +96,45 @@ export {
     partialFractions,
     isolate
 } from './manipulate';
+
+// Export equation solving
+export {
+    solveLinear,
+    solveQuadratic,
+    solveCubic,
+    solvePolynomial,
+    solvePolynomialNumeric,
+    solveLinearSystem
+} from './solve';
+
+// Export symbolic limits
+export {
+    limit,
+    limitAtInfinity,
+    lhopital,
+    limitFromLeft,
+    limitFromRight,
+    limitExists,
+    LimitDirection
+} from './limits';
+
+// Export series expansion
+export {
+    taylorSeries,
+    maclaurinSeries,
+    powerSeriesCoefficients,
+    addPowerSeries,
+    multiplyPowerSeries,
+    composePowerSeries,
+    powerSeriesToExpression,
+    sinSeries,
+    cosSeries,
+    expSeries,
+    lnOnePlusSeries,
+    binomialSeries,
+    geometricSeries,
+    differentiatePowerSeries,
+    integratePowerSeries,
+    evaluatePowerSeries,
+    radiusOfConvergence
+} from './series';
