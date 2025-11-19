@@ -23,3 +23,6 @@ export * as noise from './noise';
 
 // Interpolation functions
 export * as interpolate from './interpolate';
+
+// Numerical methods
+export * as numeric from './numeric';

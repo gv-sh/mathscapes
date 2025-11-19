@@ -220,14 +220,14 @@
 
 **Theme:** Numerical analysis for solving mathematical problems computationally
 
-### Week 1: Root Finding & Optimization
-- [ ] **Root finding algorithms:**
+### Week 1: Root Finding & Optimization ✅
+- [x] **Root finding algorithms:**
   - Bisection method
   - Newton-Raphson method
   - Secant method
   - Brent's method (hybrid)
   - Polynomial root finding (Durand-Kerner, etc.)
-- [ ] **Univariate optimization:**
+- [x] **Univariate optimization:**
   - Golden section search
   - Brent's method for optimization
   - Gradient descent (1D)
