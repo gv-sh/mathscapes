@@ -1,0 +1,23 @@
+{
+  "entryPoints": ["./src"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "exclude": ["**/*.test.ts", "**/__tests__/**"],
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeInternal": false,
+  "readme": "README.md",
+  "plugin": [],
+  "theme": "default",
+  "name": "Mathscapes API Documentation",
+  "includeVersion": true,
+  "gitRevision": "main",
+  "categorizeByGroup": true,
+  "categoryOrder": ["Core", "Linear Algebra", "Geometry", "*"],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true
+  },
+  "searchInComments": true,
+  "sort": ["source-order"]
+}

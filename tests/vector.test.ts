@@ -26,6 +26,26 @@ describe('Vector', () => {
     test('throws error for empty vector', () => {
       expect(() => new Vector([])).toThrow();
     });
+
+    test('throws error for zero dimension in zero()', () => {
+      expect(() => Vector.zero(0)).toThrow('Dimension must be at least 1');
+    });
+
+    test('throws error for negative dimension in zero()', () => {
+      expect(() => Vector.zero(-1)).toThrow('Dimension must be at least 1');
+    });
+
+    test('throws error for zero dimension in unit()', () => {
+      expect(() => Vector.unit(0, 0)).toThrow('Dimension must be at least 1');
+    });
+
+    test('throws error for negative axis in unit()', () => {
+      expect(() => Vector.unit(3, -1)).toThrow();
+    });
+
+    test('throws error for axis >= dimension in unit()', () => {
+      expect(() => Vector.unit(3, 3)).toThrow();
+    });
   });
 
   describe('Basic Operations', () => {
@@ -65,6 +85,26 @@ describe('Vector', () => {
       const normalized = v.normalize();
       expect(normalized.toArray()).toEqual([0, 0, 0]);
     });
+
+    test('throws error for get with negative index', () => {
+      const v = new Vector([1, 2, 3]);
+      expect(() => v.get(-1)).toThrow();
+    });
+
+    test('throws error for get with index >= dimension', () => {
+      const v = new Vector([1, 2, 3]);
+      expect(() => v.get(3)).toThrow();
+    });
+
+    test('throws error for set with negative index', () => {
+      const v = new Vector([1, 2, 3]);
+      expect(() => v.set(-1, 5)).toThrow();
+    });
+
+    test('throws error for set with index >= dimension', () => {
+      const v = new Vector([1, 2, 3]);
+      expect(() => v.set(3, 5)).toThrow();
+    });
   });
 
   describe('Arithmetic Operations', () => {
@@ -99,6 +139,12 @@ describe('Vector', () => {
       const v2 = new Vector([1, 2, 3]);
       expect(() => v1.add(v2)).toThrow();
     });
+
+    test('throws error for dimension mismatch in subtraction', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.subtract(v2)).toThrow();
+    });
   });
 
   describe('Dot and Cross Product', () => {
@@ -126,6 +172,12 @@ describe('Vector', () => {
       const v1 = new Vector([1, 2]);
       const v2 = new Vector([3, 4]);
       expect(() => v1.cross(v2)).toThrow();
+    });
+
+    test('throws error for dot product with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.dot(v2)).toThrow();
     });
   });
 
@@ -175,6 +227,18 @@ describe('Vector', () => {
       const v2 = Vector.zero(2);
       expect(() => v1.projectOnto(v2)).toThrow();
     });
+
+    test('throws error for projection with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.projectOnto(v2)).toThrow();
+    });
+
+    test('throws error for rejection from zero vector', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = Vector.zero(2);
+      expect(() => v1.rejectFrom(v2)).toThrow();
+    });
   });
 
   describe('Reflection', () => {
@@ -192,6 +256,12 @@ describe('Vector', () => {
       const reflected = v.reflect(normal);
       expect(reflected.toArray()[0]).toBeCloseTo(-1);
       expect(reflected.toArray()[1]).toBeCloseTo(0);
+    });
+
+    test('throws error for reflection with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.reflect(v2)).toThrow();
     });
   });
 
@@ -241,6 +311,28 @@ describe('Vector', () => {
       expect(normalized.toArray()[0]).toBeCloseTo(1 / Math.sqrt(2));
       expect(normalized.toArray()[1]).toBeCloseTo(1 / Math.sqrt(2));
     });
+
+    test('throws error for lerp with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.lerp(v2, 0.5)).toThrow();
+    });
+
+    test('throws error for slerp with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.slerp(v2, 0.5)).toThrow();
+    });
+
+    test('slerp with parallel vectors uses normalized lerp', () => {
+      const v1 = new Vector([1, 0]);
+      const v2 = new Vector([2, 0]);
+      const result = v1.slerp(v2, 0.5);
+      // For parallel vectors, slerp uses lerp then normalizes
+      expect(result.magnitude()).toBeCloseTo(1);
+      expect(result.toArray()[0]).toBeCloseTo(1);
+      expect(result.toArray()[1]).toBeCloseTo(0);
+    });
   });
 
   describe('Utility Methods', () => {
@@ -253,6 +345,12 @@ describe('Vector', () => {
     test('equals returns false for different vectors', () => {
       const v1 = new Vector([1, 2, 3]);
       const v2 = new Vector([1, 2, 4]);
+      expect(v1.equals(v2)).toBe(false);
+    });
+
+    test('equals returns false for different dimensions', () => {
+      const v1 = new Vector([1, 2, 3]);
+      const v2 = new Vector([1, 2]);
       expect(v1.equals(v2)).toBe(false);
     });
 
@@ -303,6 +401,18 @@ describe('Vector', () => {
       const v = new Vector([1, 2, 3]);
       const result = v.map(x => x * 2);
       expect(result.toArray()).toEqual([2, 4, 6]);
+    });
+
+    test('throws error for componentMin with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.componentMin(v2)).toThrow();
+    });
+
+    test('throws error for componentMax with dimension mismatch', () => {
+      const v1 = new Vector([1, 2]);
+      const v2 = new Vector([1, 2, 3]);
+      expect(() => v1.componentMax(v2)).toThrow();
     });
   });
 });

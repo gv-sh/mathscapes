@@ -4,6 +4,12 @@ node_modules/
 # Output directory
 dist/
 
+# Generated documentation
+docs/
+
+# Test coverage reports
+coverage/
+
 # Logs
 logs
 *.log
