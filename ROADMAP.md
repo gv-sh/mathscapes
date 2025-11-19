@@ -101,14 +101,14 @@
   - Polynomial evaluation, derivative
   - Factorization (basic cases)
 
-### Week 2: Symbolic Differentiation
-- [ ] **Differentiation rules:**
+### Week 2: Symbolic Differentiation ✅
+- [x] **Differentiation rules:**
   - Power rule, product rule, quotient rule, chain rule
   - Derivatives of elementary functions (sin, cos, exp, log, etc.)
   - Partial derivatives
   - Higher-order derivatives
   - Gradient, Jacobian, Hessian computation
-- [ ] **Automatic differentiation (AD):**
+- [x] **Automatic differentiation (AD):**
   - Forward mode AD
   - Reverse mode AD (for ML applications)
 
