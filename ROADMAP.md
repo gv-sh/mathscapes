@@ -251,18 +251,18 @@
   - Linear programming (Simplex method)
   - Projected gradient descent
 
-### Week 3: Numerical Integration & Differentiation
-- [ ] **Numerical integration (quadrature):**
+### Week 3: Numerical Integration & Differentiation ✅
+- [x] **Numerical integration (quadrature):**
   - Trapezoidal rule
   - Simpson's rule
   - Romberg integration
   - Gaussian quadrature
   - Adaptive quadrature
   - Multi-dimensional integration (Monte Carlo, cubature)
-- [ ] **Numerical differentiation:**
+- [x] **Numerical differentiation:**
   - Finite differences (forward, backward, central)
   - Richardson extrapolation
-  - Automatic differentiation (if not in Month 2)
+  - Automatic differentiation (implemented in Month 2)
 
 ### Week 4: Differential Equations
 - [ ] **Ordinary Differential Equations (ODEs):**
