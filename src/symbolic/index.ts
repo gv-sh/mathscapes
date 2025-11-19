@@ -69,3 +69,30 @@ export {
     reverseMode,
     reverseModeGradient
 } from './autodiff';
+
+// Export integration
+export {
+    integrate,
+    definiteIntegral,
+    numericalIntegrate
+} from './integrate';
+
+// Export simplification
+export {
+    algebraicSimplify,
+    collectLikeTerms,
+    expand,
+    factor,
+    simplifyTrig,
+    simplifyLogExp,
+    rationalize
+} from './simplify';
+
+// Export expression manipulation
+export {
+    substitute,
+    substituteMultiple,
+    solve,
+    partialFractions,
+    isolate
+} from './manipulate';
