@@ -48,3 +48,24 @@ export {
     fromRoots,
     gcd as polynomialGcd
 } from './polynomial';
+
+// Export differentiation
+export {
+    differentiate,
+    nthDerivative,
+    partialDerivatives,
+    gradient,
+    jacobian,
+    hessian,
+    directionalDerivative
+} from './differentiate';
+
+// Export automatic differentiation
+export {
+    Dual,
+    Variable as ADVariable,
+    forwardMode,
+    forwardModeGradient,
+    reverseMode,
+    reverseModeGradient
+} from './autodiff';
