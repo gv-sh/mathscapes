@@ -113,17 +113,17 @@
   - Reverse mode AD (for ML applications)
 
 ### Week 3: Symbolic Integration & Simplification
-- [ ] **Integration:**
+- [x] **Integration:**
   - Basic integration rules
   - Integration by substitution (simple cases)
   - Definite integrals with symbolic bounds
-- [ ] **Simplification:**
+- [x] **Simplification:**
   - Algebraic simplification (combine like terms)
   - Trigonometric identities
   - Logarithm/exponential simplification
   - Rationalize expressions
   - Expand/factor expressions
-- [ ] **Expression manipulation:**
+- [x] **Expression manipulation:**
   - Substitute variables
   - Solve for variable (linear, quadratic, simple cases)
   - Partial fraction decomposition
