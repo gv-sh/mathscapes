@@ -20,18 +20,18 @@
 
 **Theme:** Build the mathematical type system and complete linear algebra
 
-### Week 1: Numeric Tower (UNIQUE!)
-- [ ] **Rational Numbers** (Exact fractions)
+### Week 1: Numeric Tower (UNIQUE!) ✅
+- [x] **Rational Numbers** (Exact fractions)
   - Rational class with automatic simplification
   - Arithmetic operations maintaining exactness
   - Conversion to/from decimals with precision control
   - Examples: `new Rational(1, 3)`, `Rational.parse("22/7")`
-- [ ] **Complex Numbers**
+- [x] **Complex Numbers**
   - Complex class with real/imaginary components
   - Arithmetic, magnitude, phase, conjugate
   - Polar/rectangular conversion
   - Examples: `new Complex(3, 4)`, `Complex.fromPolar(r, theta)`
-- [ ] **Quaternions** (for 3D rotations - RARE in JS!)
+- [x] **Quaternions** (for 3D rotations - RARE in JS!)
   - Quaternion class (w, x, y, z components)
   - Multiplication, conjugate, inverse, norm
   - Rotation operations, SLERP interpolation
