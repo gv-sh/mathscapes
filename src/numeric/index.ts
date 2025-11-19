@@ -69,3 +69,43 @@ export type {
     ConstrainedOptimizeOptions,
     ConstrainedOptimizeResult,
 } from './constrained-optimize';
+
+// Numerical integration algorithms
+export {
+    trapezoidal,
+    simpson,
+    romberg,
+    gaussLegendre,
+    adaptiveQuadrature,
+    monteCarlo,
+    monteCarloMulti,
+    composite,
+} from './integrate';
+
+export type {
+    IntegrateOptions,
+    IntegrateResult,
+    MonteCarloOptions,
+} from './integrate';
+
+// Numerical differentiation algorithms
+export {
+    forwardDifference,
+    backwardDifference,
+    centralDifference,
+    centralDifference5Point,
+    secondDerivative,
+    derivative,
+    richardson,
+    partial,
+    gradient,
+    jacobian,
+    hessian,
+    directional,
+} from './differentiate';
+
+export type {
+    DifferentiateOptions,
+    DifferentiateResult,
+    RichardsonOptions,
+} from './differentiate';
