@@ -233,21 +233,23 @@
   - Gradient descent (1D)
   - Newton's method for optimization
 
-### Week 2: Multivariate Optimization
-- [ ] **Gradient-based methods:**
+### Week 2: Multivariate Optimization ✅
+- [x] **Gradient-based methods:**
   - Gradient descent (with momentum, Nesterov)
   - Conjugate gradient
   - BFGS, L-BFGS
   - Newton's method (with Hessian)
-- [ ] **Gradient-free methods:**
+- [x] **Gradient-free methods:**
   - Nelder-Mead simplex
   - Powell's method
   - Simulated annealing
   - Genetic algorithms (basic)
-- [ ] **Constrained optimization:**
+- [x] **Constrained optimization:**
   - Lagrange multipliers
   - Penalty methods
+  - Augmented Lagrangian method
   - Linear programming (Simplex method)
+  - Projected gradient descent
 
 ### Week 3: Numerical Integration & Differentiation
 - [ ] **Numerical integration (quadrature):**

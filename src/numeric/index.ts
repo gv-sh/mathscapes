@@ -21,7 +21,7 @@ export {
 
 export type { RootOptions, RootResult, PolynomialRootOptions } from './roots';
 
-// Optimization algorithms
+// Univariate optimization algorithms
 export {
     goldenSection,
     brentOptimize,
@@ -31,3 +31,41 @@ export {
 } from './optimize';
 
 export type { OptimizeOptions, OptimizeResult } from './optimize';
+
+// Multivariate optimization algorithms
+export {
+    gradientDescentMultivariate,
+    conjugateGradient,
+    bfgs,
+    lbfgs,
+    newtonMultivariate,
+    nelderMead,
+    powell,
+    simulatedAnnealing,
+    geneticAlgorithm,
+} from './multivariate-optimize';
+
+export type {
+    Vector,
+    Matrix,
+    ObjectiveFunction,
+    GradientFunction,
+    HessianFunction,
+    ConstraintFunction,
+    MultivariateOptimizeOptions,
+    MultivariateOptimizeResult,
+} from './multivariate-optimize';
+
+// Constrained optimization algorithms
+export {
+    lagrangeMultipliers,
+    penaltyMethod,
+    augmentedLagrangian,
+    simplexMethod,
+    projectedGradientDescent,
+} from './constrained-optimize';
+
+export type {
+    ConstrainedOptimizeOptions,
+    ConstrainedOptimizeResult,
+} from './constrained-optimize';
