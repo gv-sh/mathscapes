@@ -178,15 +178,15 @@
   - Boolean operations (union, intersection, difference)
   - Spatial data structures (Quadtree, Octree, KD-tree)
 
-### Week 3: Noise Functions & Interpolation
-- [ ] **Noise functions:**
+### Week 3: Noise Functions & Interpolation ✅
+- [x] **Noise functions:**
   - Perlin noise (1D, 2D, 3D, 4D)
   - Simplex noise (improved Perlin)
   - Worley/Cellular noise
   - Fractal noise (fBm - fractional Brownian motion)
   - Value noise, Gradient noise
   - Domain warping, turbulence
-- [ ] **Interpolation:**
+- [x] **Interpolation:**
   - Linear, bilinear, trilinear
   - Cubic, bicubic (Catmull-Rom, Hermite)
   - Bezier curves (quadratic, cubic, arbitrary degree)
