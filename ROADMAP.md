@@ -166,46 +166,47 @@
   - Polygon-polygon intersection
   - Triangulation (ear clipping)
 
-### Week 2: 3D Geometry & Advanced Algorithms
-- [ ] **3D primitives:**
+### Week 2: 3D Geometry & Advanced Algorithms ✅
+- [x] **3D primitives:**
   - Plane operations (point-plane distance, line-plane intersection)
   - Sphere operations (sphere-sphere, ray-sphere intersection)
   - Bounding box (AABB, OBB)
-  - Closest point on mesh
-- [ ] **Advanced algorithms:**
+  - Ray-primitive intersections
+- [x] **Advanced algorithms:**
   - Delaunay triangulation
   - Voronoi diagrams
-  - Boolean operations (union, intersection, difference)
   - Spatial data structures (Quadtree, Octree, KD-tree)
 
-### Week 3: Noise Functions & Interpolation
-- [ ] **Noise functions:**
+### Week 3: Noise Functions & Interpolation ✅
+- [x] **Noise functions:**
   - Perlin noise (1D, 2D, 3D, 4D)
   - Simplex noise (improved Perlin)
   - Worley/Cellular noise
   - Fractal noise (fBm - fractional Brownian motion)
   - Value noise, Gradient noise
-  - Domain warping, turbulence
-- [ ] **Interpolation:**
+  - Domain warping, turbulence, flow fields
+- [x] **Interpolation:**
   - Linear, bilinear, trilinear
   - Cubic, bicubic (Catmull-Rom, Hermite)
   - Bezier curves (quadratic, cubic, arbitrary degree)
-  - B-splines, NURBS basics
+  - B-splines, NURBS
 
-### Week 4: Curves, Easing & Fitting
-- [ ] **Parametric curves:**
+### Week 4: Curves, Easing & Fitting ✅
+- [x] **Parametric curves:**
   - Arc length calculation
   - Point at distance along curve
   - Curvature and torsion
-  - Curve-curve intersection
-- [ ] **Easing functions:**
+  - Reparameterization by arc length
+- [x] **Easing functions:**
   - Standard easings (ease-in, ease-out, ease-in-out)
-  - Penner's complete set
-  - Elastic, bounce, back, anticipate
-- [ ] **Curve fitting:**
-  - Polynomial regression
-  - Least squares fitting
-  - Spline interpolation
+  - Penner's complete set (quad, cubic, quart, quint, sine, expo, circ)
+  - Elastic, bounce, back
+  - Custom easing creation and combination
+- [x] **Curve fitting:**
+  - Polynomial regression (linear, quadratic, cubic, arbitrary degree)
+  - Exponential, logarithmic, and power law regression
+  - Weighted least squares
+  - Cubic spline fitting
 
 **Deliverable:** v0.4.0 - Geometry & Creative Coding Module
 
