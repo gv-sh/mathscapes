@@ -149,16 +149,16 @@
 
 **Theme:** Geometry for graphics, simulations, and generative art
 
-### Week 1: 2D Geometry Primitives
-- [ ] **Point operations:**
+### Week 1: 2D Geometry Primitives ✅
+- [x] **Point operations:**
   - Distance, midpoint, rotation, reflection
   - Polar/Cartesian conversion
-- [ ] **Line/Segment operations:**
+- [x] **Line/Segment operations:**
   - Intersection detection (line-line, segment-segment)
   - Distance to point, closest point on line
   - Parallel/perpendicular tests
   - Line equation forms (point-slope, two-point, etc.)
-- [ ] **Polygon operations:**
+- [x] **Polygon operations:**
   - Area calculation (Shoelace formula)
   - Centroid, perimeter computation
   - Point-in-polygon (ray casting, winding number)

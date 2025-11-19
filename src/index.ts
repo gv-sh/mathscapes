@@ -12,5 +12,8 @@ export { MathSet } from './core/set';
 export { Vector } from './linalg/vector';
 export * as distance from './linalg/distance';
 
+// Computational Geometry
+export { Point, Line, Segment, Polygon } from './geometry';
+
 // Symbolic mathematics
 export * from './symbolic';
