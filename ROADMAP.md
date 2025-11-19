@@ -264,15 +264,15 @@
   - Richardson extrapolation
   - Automatic differentiation (implemented in Month 2)
 
-### Week 4: Differential Equations
-- [ ] **Ordinary Differential Equations (ODEs):**
+### Week 4: Differential Equations ✅
+- [x] **Ordinary Differential Equations (ODEs):**
   - Euler's method
   - Runge-Kutta methods (RK2, RK4, RK45)
   - Adaptive step-size control
   - Multistep methods (Adams-Bashforth)
   - Systems of ODEs
   - Boundary value problems (shooting, finite difference)
-- [ ] **Partial Differential Equations (PDEs - basic):**
+- [x] **Partial Differential Equations (PDEs - basic):**
   - Finite difference methods
   - Heat equation solver
   - Wave equation solver
