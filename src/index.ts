@@ -11,3 +11,6 @@ export { MathSet } from './core/set';
 // Linear algebra - vectors and distance metrics
 export { Vector } from './linalg/vector';
 export * as distance from './linalg/distance';
+
+// Symbolic mathematics
+export * from './symbolic';
