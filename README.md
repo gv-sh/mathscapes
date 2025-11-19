@@ -38,6 +38,26 @@ A comprehensive mathematical library for JavaScript/TypeScript with focus on num
   - Matrix square root (sqrt)
   - Matrix power (arbitrary powers)
 
+### Symbolic Mathematics (Week 1) ✅
+- **Expression System**:
+  - Abstract Syntax Tree (AST) representation
+  - Expression parsing from strings
+  - LaTeX and Unicode output formatting
+  - Expression evaluation and simplification
+  - Pattern matching and equality checking
+
+- **Mathematical Functions**:
+  - Trigonometric: sin, cos, tan, asin, acos, atan
+  - Exponential & Logarithmic: exp, ln, log
+  - Special: sqrt, abs
+
+- **Polynomial Class**:
+  - Polynomial arithmetic (add, subtract, multiply, divide)
+  - Evaluation using Horner's method
+  - Derivative and integral computation
+  - Root finding (quadratic formula, numerical methods)
+  - GCD computation
+
 ### Basic Matrix Operations
 - Addition, subtraction, multiplication
 - Transpose, inverse, identity
@@ -50,6 +70,39 @@ npm install mathscapes
 ```
 
 ## Usage
+
+### Symbolic Mathematics
+
+```typescript
+import { parse, Polynomial, fromRoots } from 'mathscapes';
+
+// Parse and evaluate expressions
+const expr = parse("x^2 + 2*x + 1");
+console.log(expr.toString());        // "(x^2 + (2 * x) + 1)"
+console.log(expr.toLatex());         // "x^{2} + 2 \cdot x + 1"
+console.log(expr.toUnicode());       // "x² + 2·x + 1"
+
+const vars = new Map([["x", 3]]);
+console.log(expr.evaluate(vars));    // 16
+
+// Simplify expressions
+const simplified = parse("2 + 3 * 4").simplify();
+console.log(simplified.toString());  // "14"
+
+// Work with polynomials
+const p = new Polynomial([1, 2, 1]);  // x^2 + 2x + 1
+console.log(p.toString());            // "x^2 + 2*x + 1"
+console.log(p.evaluate(2));           // 9
+console.log(p.derivative().toString()); // "2*x + 2"
+
+// Find roots
+const roots = p.roots();
+console.log(roots);                   // [-1] (double root)
+
+// Create polynomial from roots
+const q = fromRoots([1, 2, 3]);       // (x-1)(x-2)(x-3)
+console.log(q.toString());            // "x^3 - 6*x^2 + 11*x - 6"
+```
 
 ### Numeric Tower
 
@@ -156,9 +209,9 @@ This library is being developed following a comprehensive 6-month roadmap. See [
 
 - ✅ Week 1: Numeric Tower (Rational, Complex, Quaternion)
 - ✅ Week 2: Advanced Matrix Operations
-- 🚧 Week 3: Vector Operations & Advanced Types
-- 📋 Week 4: Quality & Documentation
-- 📋 Month 2: Symbolic Mathematics
+- ✅ Week 3: Vector Operations & Advanced Types
+- ✅ Week 4: Quality & Documentation
+- 🚧 Month 2 Week 1: Symbolic Mathematics (Expression System & Parsing)
 - 📋 Month 3: Computational Geometry
 - 📋 Month 4: Numerical Methods
 - 📋 Month 5: Statistics & ML Operations
