@@ -46,3 +46,31 @@ export {
     ridged2D,
     ridged3D
 } from './fractal';
+
+// Value noise
+export {
+    ValueNoise,
+    value1D,
+    value2D,
+    value3D
+} from './value';
+
+// Gradient noise
+export {
+    GradientNoise,
+    gradient2D,
+    gradient3D
+} from './gradient';
+
+// Domain warping
+export {
+    NoiseFn2D,
+    NoiseFn3D,
+    DomainWarpOptions,
+    domainWarp2D,
+    domainWarp3D,
+    recursiveDomainWarp2D,
+    recursiveDomainWarp3D,
+    flowField2D,
+    flowField3D
+} from './domainWarp';
