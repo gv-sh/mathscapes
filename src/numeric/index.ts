@@ -109,3 +109,40 @@ export type {
     DifferentiateResult,
     RichardsonOptions,
 } from './differentiate';
+
+// Ordinary Differential Equation (ODE) solvers
+export {
+    euler,
+    rk2,
+    rk4,
+    rk45,
+    adamsBashforth2,
+    adamsBashforth4,
+    solveSystem,
+    shootingMethod,
+    finiteDifferenceBVP,
+} from './ode';
+
+export type {
+    ODEFunction,
+    ODESystemFunction,
+    ODEOptions,
+    ODEResult,
+    ODESystemResult,
+    BVPOptions,
+    BVPResult,
+} from './ode';
+
+// Partial Differential Equation (PDE) solvers
+export {
+    heatEquation1D,
+    heatEquation1DImplicit,
+    waveEquation1D,
+    heatEquation2D,
+} from './pde';
+
+export type {
+    PDEOptions,
+    PDE1DResult,
+    PDE2DResult,
+} from './pde';
