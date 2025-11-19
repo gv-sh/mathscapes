@@ -17,3 +17,9 @@ export { Point, Line, Segment, Polygon } from './geometry';
 
 // Symbolic mathematics
 export * from './symbolic';
+
+// Noise functions
+export * as noise from './noise';
+
+// Interpolation functions
+export * as interpolate from './interpolate';
