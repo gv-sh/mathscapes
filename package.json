@@ -1,13 +1,24 @@
 {
     "name": "mathscapes",
-    "version": "0.1.4",
-    "description": "Maths for Machine Learning",
+    "version": "0.2.0",
+    "description": "A comprehensive mathematical library for JavaScript/TypeScript with focus on numerical computing, linear algebra, and exact arithmetic",
     "main": "index.js",
     "scripts": {
         "test": "jest",
         "build": "tsc"
     },
-    "keywords": [],
+    "keywords": [
+        "mathematics",
+        "linear algebra",
+        "matrix",
+        "numerical computing",
+        "rational numbers",
+        "complex numbers",
+        "quaternions",
+        "eigenvalues",
+        "svd",
+        "decomposition"
+    ],
     "author": "",
     "license": "ISC",
     "devDependencies": {

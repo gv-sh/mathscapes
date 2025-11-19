@@ -38,16 +38,16 @@
   - Conversion to/from rotation matrices/Euler angles
   - Examples: `new Quaternion(1, 0, 0, 0)`, `Quaternion.fromAxisAngle(axis, angle)`
 
-### Week 2: Advanced Matrix Operations
-- [ ] **Eigenvalues & Eigenvectors** (Power iteration, QR algorithm)
-- [ ] **Singular Value Decomposition (SVD)**
-- [ ] **Matrix Decompositions:**
+### Week 2: Advanced Matrix Operations ✅
+- [x] **Eigenvalues & Eigenvectors** (Power iteration, QR algorithm)
+- [x] **Singular Value Decomposition (SVD)**
+- [x] **Matrix Decompositions:**
   - LU Decomposition
   - QR Decomposition
   - Cholesky Decomposition
-- [ ] **Matrix Norms:** Frobenius, L1, L2, infinity norm
-- [ ] **Rank & Nullspace** computation
-- [ ] **Matrix functions:** exp, log, sqrt, power
+- [x] **Matrix Norms:** Frobenius, L1, L2, infinity norm
+- [x] **Rank & Nullspace** computation
+- [x] **Matrix functions:** exp, log, sqrt, power
 
 ### Week 3: Vector Operations & Advanced Types
 - [ ] **Vector class with full operations:**
