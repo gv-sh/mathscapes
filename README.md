@@ -58,6 +58,28 @@ A comprehensive mathematical library for JavaScript/TypeScript with focus on num
   - Root finding (quadratic formula, numerical methods)
   - GCD computation
 
+### Computational Geometry & Curves (Month 3) ✅
+- **Parametric Curves**:
+  - Arc length calculation (2D and 3D)
+  - Point at distance along curve
+  - Curvature and torsion computation
+  - Tangent and normal vectors
+
+- **Easing Functions**:
+  - Complete Penner's easing collection
+  - Quadratic, cubic, quartic, quintic easings
+  - Sine, exponential, circular easings
+  - Back, elastic, bounce, anticipate easings
+  - Custom Bezier easing (CSS cubic-bezier)
+  - Steps function
+
+- **Curve Fitting**:
+  - Polynomial regression (any degree)
+  - Linear regression with R² and RMSE
+  - Weighted polynomial regression
+  - Natural cubic spline interpolation
+  - Least squares fitting with custom basis functions
+
 ### Basic Matrix Operations
 - Addition, subtraction, multiplication
 - Transpose, inverse, identity
@@ -192,6 +214,83 @@ const expA = matrixExp(A);      // e^A
 const logA = matrixLog(A);      // log(A)
 const sqrtA = matrixSqrt(A);    // A^(1/2)
 const A3 = matrixPower(A, 3);   // A^3
+```
+
+### Parametric Curves
+
+```typescript
+import {
+  arcLength2D,
+  curvature2D,
+  pointAtDistance2D,
+  tangent2D
+} from 'mathscapes';
+
+// Define a circle
+const circle = (t: number) => ({
+  x: Math.cos(t),
+  y: Math.sin(t)
+});
+
+// Calculate arc length
+const circumference = arcLength2D(circle, 0, 2 * Math.PI); // ≈ 6.28
+
+// Get curvature
+const k = curvature2D(circle, 0); // 1 for unit circle
+
+// Get point at distance
+const point = pointAtDistance2D(circle, 0, 2 * Math.PI, Math.PI);
+
+// Get tangent vector
+const tangent = tangent2D(circle, Math.PI / 4);
+```
+
+### Easing Functions
+
+```typescript
+import { interpolate } from 'mathscapes';
+
+// Use built-in easings
+const eased = interpolate.easing.easeInOutCubic(0.5);
+
+// Elastic bounce effect
+const bounce = interpolate.easing.easeOutElastic(0.7);
+
+// Custom Bezier easing (like CSS)
+const custom = interpolate.easing.bezierEasing(0.25, 0.1, 0.25, 1);
+const value = custom(0.5);
+
+// Steps (like CSS steps())
+const stepped = interpolate.easing.steps(5);
+```
+
+### Curve Fitting
+
+```typescript
+import {
+  polynomialRegression,
+  linearRegression,
+  naturalCubicSpline
+} from 'mathscapes';
+
+// Linear regression
+const data = [
+  { x: 0, y: 1 },
+  { x: 1, y: 3 },
+  { x: 2, y: 5 }
+];
+const fit = linearRegression(data);
+console.log(fit.slope);     // 2
+console.log(fit.intercept); // 1
+console.log(fit.rSquared);  // 1.0 (perfect fit)
+
+// Polynomial regression (quadratic)
+const quadFit = polynomialRegression(data, 2);
+const interpolated = quadFit.evaluate(1.5);
+
+// Cubic spline interpolation
+const spline = naturalCubicSpline(data);
+const smooth = spline(1.5); // Smooth interpolation
 ```
 
 ## Development

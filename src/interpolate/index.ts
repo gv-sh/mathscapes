@@ -55,3 +55,35 @@ export {
     cubicBezierParameterAtLength,
     elevateBezierDegree
 } from './bezier';
+
+// Parametric curves
+export {
+    ParametricCurve2D,
+    ParametricCurve3D,
+    arcLength2D,
+    arcLength3D,
+    parameterAtLength2D,
+    parameterAtLength3D,
+    pointAtDistance2D,
+    pointAtDistance3D,
+    curvature2D,
+    signedCurvature2D,
+    curvature3D,
+    torsion3D,
+    tangent2D,
+    tangent3D,
+    normal2D
+} from './parametric';
+
+// Easing functions
+export * as easing from './easing';
+
+// Curve fitting
+export {
+    PolynomialFit,
+    polynomialRegression,
+    linearRegression,
+    weightedPolynomialRegression,
+    naturalCubicSpline,
+    leastSquaresFit
+} from './fitting';

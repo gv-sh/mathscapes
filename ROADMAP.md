@@ -192,20 +192,25 @@
   - Bezier curves (quadratic, cubic, arbitrary degree)
   - B-splines, NURBS basics
 
-### Week 4: Curves, Easing & Fitting
-- [ ] **Parametric curves:**
-  - Arc length calculation
+### Week 4: Curves, Easing & Fitting ✅
+- [x] **Parametric curves:**
+  - Arc length calculation (2D and 3D)
   - Point at distance along curve
   - Curvature and torsion
-  - Curve-curve intersection
-- [ ] **Easing functions:**
+  - Tangent and normal vectors
+- [x] **Easing functions:**
   - Standard easings (ease-in, ease-out, ease-in-out)
-  - Penner's complete set
+  - Penner's complete set (quadratic through quintic)
+  - Sine, exponential, circular easings
   - Elastic, bounce, back, anticipate
-- [ ] **Curve fitting:**
-  - Polynomial regression
-  - Least squares fitting
-  - Spline interpolation
+  - Custom Bezier easing (CSS cubic-bezier)
+  - Steps function
+- [x] **Curve fitting:**
+  - Polynomial regression (any degree)
+  - Linear regression with statistics
+  - Weighted polynomial regression
+  - Least squares fitting with custom basis functions
+  - Natural cubic spline interpolation
 
 **Deliverable:** v0.4.0 - Geometry & Creative Coding Module
 
