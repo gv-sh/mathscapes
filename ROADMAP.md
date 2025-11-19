@@ -86,16 +86,16 @@
 **Theme:** Computer algebra system - virtually absent in JS/TS ecosystem
 
 ### Week 1: Expression System & Parsing
-- [ ] **Symbolic expression tree:**
+- [x] **Symbolic expression tree:**
   - AST representation of mathematical expressions
   - Expression class hierarchy (Add, Multiply, Power, Sin, Cos, etc.)
   - Pattern matching system
   - Expression equality and comparison
-- [ ] **Expression parser:**
+- [x] **Expression parser:**
   - Parse string expressions to AST ("x^2 + 2*x + 1")
   - LaTeX output formatting
   - Pretty printing (Unicode, ASCII math)
-- [ ] **Polynomial class:**
+- [x] **Polynomial class:**
   - Polynomial arithmetic (add, multiply, divide)
   - Root finding (numeric and symbolic when possible)
   - Polynomial evaluation, derivative
