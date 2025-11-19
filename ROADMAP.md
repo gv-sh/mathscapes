@@ -166,13 +166,13 @@
   - Polygon-polygon intersection
   - Triangulation (ear clipping)
 
-### Week 2: 3D Geometry & Advanced Algorithms
-- [ ] **3D primitives:**
+### Week 2: 3D Geometry & Advanced Algorithms ✅
+- [x] **3D primitives:**
   - Plane operations (point-plane distance, line-plane intersection)
   - Sphere operations (sphere-sphere, ray-sphere intersection)
   - Bounding box (AABB, OBB)
   - Closest point on mesh
-- [ ] **Advanced algorithms:**
+- [x] **Advanced algorithms:**
   - Delaunay triangulation
   - Voronoi diagrams
   - Boolean operations (union, intersection, difference)
