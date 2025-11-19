@@ -285,17 +285,17 @@
 
 **Theme:** Statistical computing and modern machine learning math
 
-### Week 1: Statistics Fundamentals
-- [ ] **Descriptive statistics:**
+### Week 1: Statistics Fundamentals ✅
+- [x] **Descriptive statistics:**
   - Central tendency (mean, median, mode, trimmed mean)
   - Dispersion (variance, std dev, MAD, IQR, range)
   - Distribution shape (skewness, kurtosis)
   - Quantiles, percentiles
-- [ ] **Correlation & covariance:**
+- [x] **Correlation & covariance:**
   - Pearson, Spearman, Kendall tau
   - Covariance matrix
   - Partial correlation
-- [ ] **Moving statistics:**
+- [x] **Moving statistics:**
   - Rolling mean, variance, std dev
   - Exponentially weighted statistics
 
