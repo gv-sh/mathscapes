@@ -26,3 +26,6 @@ export * as interpolate from './interpolate';
 
 // Numerical methods
 export * as numeric from './numeric';
+
+// Statistics
+export * as stats from './stats';
