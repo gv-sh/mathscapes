@@ -84,3 +84,67 @@ export {
   CosineAnnealingWarmRestartsScheduler,
   WarmupScheduler,
 } from './optimizers';
+
+// Convolution operations
+export {
+  conv1D,
+  conv2D,
+  conv3D,
+  conv2DTranspose,
+  depthwiseSeparableConv2D,
+  calculateConvOutputSize,
+  calculateSamePadding,
+  pad1D,
+  pad2D,
+  pad3D,
+} from './convolution';
+
+export type { ConvolutionOptions, PaddingType } from './convolution';
+
+// Pooling operations
+export {
+  maxPool1D,
+  maxPool2D,
+  maxPool3D,
+  avgPool1D,
+  avgPool2D,
+  avgPool3D,
+  minPool2D,
+  globalAvgPool2D,
+  globalMaxPool2D,
+  globalAvgPool3D,
+  globalMaxPool3D,
+  adaptiveAvgPool2D,
+  adaptiveMaxPool2D,
+} from './pooling';
+
+export type { PoolingOptions } from './pooling';
+
+// Attention mechanisms
+export {
+  scaledDotProductAttention,
+  multiHeadAttention,
+  selfAttention,
+  multiHeadSelfAttention,
+  attentionScores,
+  createCausalMask,
+  createPaddingMask,
+  combineMasks,
+  attentionEntropy,
+} from './attention';
+
+export type { AttentionOptions } from './attention';
+
+// Normalization layers
+export {
+  batchNorm1D,
+  batchNorm2D,
+  layerNorm,
+  instanceNorm,
+  groupNorm,
+  weightNorm,
+  rmsNorm,
+  adaptiveLayerNorm,
+} from './normalization';
+
+export type { NormalizationOptions } from './normalization';
