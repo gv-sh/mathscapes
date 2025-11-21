@@ -2,7 +2,8 @@
  * Statistics Module
  *
  * Comprehensive statistical computing for JavaScript/TypeScript.
- * Includes descriptive statistics, correlation analysis, and time series operations.
+ * Includes descriptive statistics, correlation analysis, time series operations,
+ * probability distributions, and statistical hypothesis tests.
  *
  * @module stats
  */
@@ -15,3 +16,9 @@ export * from './correlation';
 
 // Re-export all time series functions
 export * from './timeseries';
+
+// Re-export all probability distributions
+export * from './distributions';
+
+// Re-export all statistical tests
+export * from './tests';
