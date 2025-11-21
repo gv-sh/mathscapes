@@ -391,8 +391,8 @@
   - General graph matching
   - Vertex cover, independent set
 
-### Week 3: Specialized Modules
-- [ ] **Number theory:**
+### Week 3: Specialized Modules ✅
+- [x] **Number theory:**
   - Prime testing (trial division, Sieve of Eratosthenes, Miller-Rabin)
   - Prime generation
   - GCD, LCM (extended Euclidean algorithm)
@@ -400,7 +400,7 @@
   - Factorization (trial division, Pollard's rho)
   - Combinatorics (permutations, combinations, multinomial coefficients)
   - Fibonacci, factorial, Catalan numbers
-- [ ] **Special functions:**
+- [x] **Special functions:**
   - Gamma function, Beta function
   - Error function (erf, erfc)
   - Bessel functions (basic)
