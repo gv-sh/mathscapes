@@ -7,6 +7,10 @@
  * - Shortest path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall, A*)
  * - Minimum spanning tree algorithms (Kruskal, Prim)
  * - Graph analysis (cycle detection, connected components, bipartiteness)
+ * - Centrality measures (degree, betweenness, closeness, PageRank)
+ * - Community detection (modularity, label propagation, Louvain)
+ * - Network flow (max flow, min cut, Ford-Fulkerson, Dinic)
+ * - Graph matching (bipartite matching, max matching, vertex cover)
  */
 
 // Graph data structure
@@ -46,3 +50,49 @@ export {
   secondBestMST,
   MSTResult,
 } from './mst';
+
+// Centrality measures
+export {
+  degreeCentrality,
+  betweennessCentrality,
+  closenessCentrality,
+  pageRank,
+  eigenvectorCentrality,
+  CentralityResult,
+  PageRankOptions,
+} from './centrality';
+
+// Community detection
+export {
+  computeModularity,
+  modularityOptimization,
+  labelPropagation,
+  louvain,
+  findCliques,
+  CommunityResult,
+  LabelPropagationOptions,
+} from './community';
+
+// Network flow algorithms
+export {
+  fordFulkerson,
+  edmondsKarp,
+  minCut,
+  dinic,
+  circulation,
+  MaxFlowResult,
+  MinCutResult,
+} from './flow';
+
+// Graph matching algorithms
+export {
+  greedyMatching,
+  maxBipartiteMatching,
+  hungarianMatching,
+  maxMatching,
+  isPerfectMatching,
+  isMaximalMatching,
+  minVertexCover,
+  maxIndependentSet,
+  MatchingResult,
+} from './matching';

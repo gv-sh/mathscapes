@@ -374,17 +374,22 @@
 - [x] **Minimum spanning tree:**
   - Kruskal's, Prim's algorithm
 
-### Week 2-3: Advanced Graph Algorithms
-- [ ] **Centrality measures:**
+### Week 2-3: Advanced Graph Algorithms ✅
+- [x] **Centrality measures:**
   - Degree, betweenness, closeness
-  - PageRank
-- [ ] **Community detection:**
+  - PageRank, eigenvector centrality
+- [x] **Community detection:**
   - Modularity optimization
-  - Label propagation
-- [ ] **Flow algorithms:**
-  - Max flow (Ford-Fulkerson)
+  - Label propagation, Louvain method
+  - Clique finding
+- [x] **Flow algorithms:**
+  - Max flow (Ford-Fulkerson, Edmonds-Karp, Dinic)
   - Min cut
-- [ ] **Graph matching:** Maximum bipartite matching
+  - Circulation with demands
+- [x] **Graph matching:**
+  - Maximum bipartite matching
+  - General graph matching
+  - Vertex cover, independent set
 
 ### Week 3: Specialized Modules
 - [ ] **Number theory:**
