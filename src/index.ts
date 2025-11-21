@@ -32,3 +32,6 @@ export * as stats from './stats';
 
 // Machine Learning operations
 export * as ml from './ml';
+
+// Graph theory
+export * as graph from './graph';
