@@ -315,19 +315,19 @@
   - Normality tests (Shapiro-Wilk, Anderson-Darling, K-S)
   - Confidence intervals, hypothesis testing framework
 
-### Week 3: ML Activations, Losses & Optimizers
-- [ ] **Activation functions:**
+### Week 3: ML Activations, Losses & Optimizers ✅
+- [x] **Activation functions:**
   - ReLU, Leaky ReLU, PReLU, ELU, SELU
   - Sigmoid, Tanh, Softplus
   - Softmax, Log-softmax, Gumbel-softmax
   - Swish, GELU, Mish
   - Derivatives for backpropagation
-- [ ] **Loss functions:**
+- [x] **Loss functions:**
   - MSE, MAE, Huber, Log-Cosh
   - Cross-entropy (binary, categorical, sparse)
   - Focal loss, Hinge loss, Triplet loss
   - Custom loss combinators
-- [ ] **Optimizers:**
+- [x] **Optimizers:**
   - SGD, Momentum, Nesterov
   - AdaGrad, RMSprop, AdaDelta
   - Adam, AdamW, NAdam, RAdam
