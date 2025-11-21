@@ -29,3 +29,6 @@ export * as numeric from './numeric';
 
 // Statistics
 export * as stats from './stats';
+
+// Machine Learning operations
+export * as ml from './ml';
