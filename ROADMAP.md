@@ -359,19 +359,19 @@
 
 **Theme:** Graph algorithms + finalize library for 1.0 release
 
-### Week 1-2: Graph Theory Fundamentals
-- [ ] **Graph representations:**
+### Week 1-2: Graph Theory Fundamentals ✅
+- [x] **Graph representations:**
   - Adjacency matrix, adjacency list
   - Edge list, incidence matrix
-- [ ] **Traversal algorithms:**
+- [x] **Traversal algorithms:**
   - BFS, DFS
   - Topological sort
-- [ ] **Shortest paths:**
+- [x] **Shortest paths:**
   - Dijkstra's algorithm
   - Bellman-Ford
   - Floyd-Warshall
   - A* pathfinding
-- [ ] **Minimum spanning tree:**
+- [x] **Minimum spanning tree:**
   - Kruskal's, Prim's algorithm
 
 ### Week 2-3: Advanced Graph Algorithms
