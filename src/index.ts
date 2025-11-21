@@ -35,3 +35,9 @@ export * as ml from './ml';
 
 // Graph theory
 export * as graph from './graph';
+
+// Number theory
+export * as numberTheory from './number-theory';
+
+// Special functions
+export * as special from './special';
