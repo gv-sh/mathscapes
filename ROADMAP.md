@@ -333,20 +333,20 @@
   - Adam, AdamW, NAdam, RAdam
   - Learning rate schedulers (step, exponential, cosine annealing)
 
-### Week 4: Neural Network Operations
-- [ ] **Convolution operations:**
+### Week 4: Neural Network Operations ✅
+- [x] **Convolution operations:**
   - 1D, 2D, 3D convolution
   - Padding strategies (same, valid, custom)
   - Stride, dilation, groups
   - Transposed convolution (deconv)
-- [ ] **Pooling operations:**
+- [x] **Pooling operations:**
   - Max pooling, average pooling, min pooling
   - Global pooling, adaptive pooling
-- [ ] **Attention mechanisms:**
+- [x] **Attention mechanisms:**
   - Scaled dot-product attention
   - Multi-head attention
   - Self-attention utilities
-- [ ] **Normalization layers:**
+- [x] **Normalization layers:**
   - Batch norm, Layer norm
   - Instance norm, Group norm
   - Weight normalization
