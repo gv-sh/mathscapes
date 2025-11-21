@@ -299,16 +299,16 @@
   - Rolling mean, variance, std dev
   - Exponentially weighted statistics
 
-### Week 2: Probability & Distributions
-- [ ] **Continuous distributions:**
+### Week 2: Probability & Distributions ✅
+- [x] **Continuous distributions:**
   - Normal/Gaussian (PDF, CDF, quantile, random sampling)
   - Uniform, Exponential, Beta, Gamma
   - Student's t, Chi-squared, F-distribution
   - Multivariate normal
-- [ ] **Discrete distributions:**
+- [x] **Discrete distributions:**
   - Binomial, Poisson, Geometric
   - Multinomial, Hypergeometric
-- [ ] **Statistical tests:**
+- [x] **Statistical tests:**
   - t-test (one-sample, two-sample, paired)
   - Chi-squared test, Fisher's exact test
   - ANOVA (one-way, two-way)
